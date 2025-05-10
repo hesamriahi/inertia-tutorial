@@ -10,7 +10,7 @@ class EventsController extends Controller
 {
     public function show(Event $event)
     {
-        return Inertia::render('Event/Show', [
+        return Inertia::render('Event/show', [
             'event' => $event->only(
                 'id',
                 'name',
